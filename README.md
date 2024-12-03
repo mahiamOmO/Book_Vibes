@@ -7,6 +7,16 @@
 
 ## 👩‍🏫Faculty: Nuzhat Tabassum 
 
+## 💡 Features:
+
+✅ Full CRUD operations for books
+
+✅ Shopping cart functionality
+
+✅ Add, edit, and delete books with ease
+
+✅ A dynamic slider to showcase offers
+
 
 ## Technologies
 
