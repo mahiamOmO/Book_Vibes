@@ -35,7 +35,7 @@
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.1-purple.svg)](https://getbootstrap.com/)
 [![SQLite](https://img.shields.io/badge/SQLite-3.34.1-lightblue.svg)](https://sqlite.org/)
 
-## Teammates
+## Developed-By
 - Fahim Ahmed
 - Md Kamrul Hasan
 - Mahia Akter Momo
