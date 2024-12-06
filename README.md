@@ -5,7 +5,7 @@
 Department of Computer Science & Engineering
 ## 🚀 Course: CSE310(Object Oriented Programming II:Visual and Web Programming)
 
-## 👩‍🏫Faculty: Nuzhat Tabassum 
+## 👩‍🏫Faculty: Nuzhat Tabassum Progga 
 
 ## 💡 Features:
 
