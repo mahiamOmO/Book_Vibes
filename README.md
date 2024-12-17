@@ -5,7 +5,7 @@
 Department of Computer Science & Engineering
 ## 🚀 Course: CSE310  (Object Oriented Programming II:Visual and Web Programming)
 
-## 👩‍🏫Faculty: Nuzhat Tabassum Progga 
+## 👩‍🏫Faculty: [Nuzhat Tabassum Progga] (#)
 
 ## 💡 Features:
 
@@ -46,9 +46,9 @@ Department of Computer Science & Engineering
 [![SQLite](https://img.shields.io/badge/SQLite-3.34.1-lightblue.svg)](https://sqlite.org/)
 
 ## Developed-By
-- Fahim Ahmed
-- Md Kamrul Hasan
-- Mahia Akter Momo
+- [Fahim Ahmed](#)
+- [Md Kamrul Hasan](#)
+- [Mahia Akter Momo](#)
 
 
 ## 🔗 Links
