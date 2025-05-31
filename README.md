@@ -144,6 +144,15 @@ Book_Vibes/
 
    Open your browser and navigate to `http://localhost:8000/`
 
+   
+7. 🧪 Testing
+To run tests, use:
+
+```bash```
+
+python manage.py test
+```
+
 ---
 
 ## ✅ Usage
