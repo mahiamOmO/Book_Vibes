@@ -1,0 +1,29 @@
+{% extends "ebook/base.html" %}
+
+{% block title %}Confirm Delete{% endblock title %}
+
+{% block content %}
+<div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white shadow-lg rounded-lg p-6 max-w-md text-center">
+        
+        <!-- Warning Icon -->
+        <div class="flex justify-center">
+            <svg class="w-16 h-16 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"></path>
+            </svg>
+        </div>
+
+        <h2 class="text-xl font-bold text-red-600 mt-4">Are you sure?</h2>
+        <p class="text-gray-600 mt-2">Do you really want to delete "<strong>{{ ebook.name }}</strong>"? This action <span class="font-semibold">cannot</span> be undone.</p>
+
+        <!-- Delete Form -->
+        <form method="POST" class="mt-6">
+            {% csrf_token %}
+            <div class="flex justify-between">
+                <button type="submit" class="btn btn-error w-1/2 mx-1">Yes, Delete</button>
+                <a href="{% url 'ebook' %}" class="btn btn-neutral w-1/2 mx-1">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,61 @@
+{% extends "ebook/base.html" %}
+
+{% block content %}
+
+<div class="container mx-auto px-6 py-8">
+
+    <!-- My Ebooks Section -->
+    {% if my %}
+    <h2 class="text-4xl font-bold text-center text-yellow-500 mb-6">📚 My Ebooks</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {% for ebook in my %}
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+            <div class="flex justify-center">
+                <img src="{{ ebook.image.url }}" alt="{{ ebook.name }}" class="w-auto h-72 object-cover">
+            </div>
+            <div class="p-4 text-center">
+                <h3 class="text-lg font-semibold text-gray-900">{{ ebook.name }}</h3>
+                <p class="text-sm text-gray-600">By <strong>{{ ebook.author.username }}</strong></p>
+                
+                <div class="mt-4 space-y-2">
+                    <a href="{% url 'ebook_details' ebook.id %}" class="btn btn-primary w-full">View Details</a>
+                    <a href="{% url 'update_ebook' ebook.id %}" class="btn btn-warning w-full">Edit</a>
+                    <a href="{% url 'delete_ebook' ebook.id %}" class="btn btn-error w-full">Delete</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Add New Ebook Button -->
+    <div class="flex justify-center mt-6">
+        <a href="{% url 'add_ebook' %}" class="btn btn-success btn-wide text-white">➕ Add New Ebook</a>
+    </div>
+    {% endif %}
+
+    <!-- Other Ebooks Section -->
+    <h2 class="text-4xl font-bold text-center text-yellow-500 mb-6">📖 Recently Added</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {% for ebook in ebooks %}
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
+            <div class="flex justify-center">
+                <img src="{{ ebook.image.url }}" alt="{{ ebook.name }}" class="w-auto h-72 object-cover">
+            </div>
+            <div class="p-4 text-center">
+                <h3 class="text-lg font-semibold text-gray-900">{{ ebook.name }}</h3>
+                <p class="text-sm text-gray-600">By <strong>{{ ebook.author.username }}</strong></p>
+                
+                <div class="mt-4">
+                     <a href="{% url 'ebook_details' ebook.id %}" class="btn btn-primary w-full">View Details</a>
+
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-center text-lg text-gray-600">No ebooks available.</p>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'store/base.html' %}
+{% load static %}
+{% load customfunction %}
+
+{% block container %}
+<div class="product-details-container container my-5">
+    <div class="row">
+        <!-- Cover Page Image -->
+        <div class="col-md-5 text-center">
+            <div class="book-cover">
+                <img src="{{ book.coverpage.url }}" alt="{{ book.name }}" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <!-- Book Details -->
+        <div class="col-md-7">
+            <h2 class="book-title mb-3">{{ book.name }}</h2>
+            <p class="book-writer text-muted">By 
+                <a href="{% url 'store:writer' id=book.writer.id %}">{{ book.writer }}</a>
+            </p>
+            <div class="book-rating mb-3">
+                <strong>Rating: </strong>
+                <span>{{ book.totalrating|averagerating:book.totalreview }}</span> / 5
+                <span class="text-muted">({{ book.totalreview }} reviews)</span>
+            </div>
+            <p class="book-price h4 text-success mb-4">Price: {{ book.price }} TK</p>
+            
+            <p class="book-description text-justify">
+                {{ book.description|default:"No description available." }}
+            </p>
+            {% if user.is_superuser %}
+                <a class="btn btn-outline-danger mr-2" href="{% url 'store:delete_book' book.id %}">Delete Book<a>
+                <a class="btn btn-primary" href="{% url 'store:edit_book' book.id %}">Edit Information<a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

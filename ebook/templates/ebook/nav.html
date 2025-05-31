@@ -1,0 +1,46 @@
+<nav class="bg-black shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        
+        <h2 class="text-4xl font-bold text-center text-yellow-500 mb-6">📚 Book Vibes</h2>
+        </a>
+
+        <ul class="hidden md:flex space-x-6 text-white font-semibold">
+            <li><a href="{% url 'ebook' %}" class="hover:underline">Ebooks</a></li>
+
+            {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                    <li><a href="{% url 'add_ebook' %}" class="hover:underline">+ New Ebook</a></li>
+                {% else %}
+                    <li class="text-yellow-300">⚠ You are not verified yet!</li>
+                {% endif %}
+            {% else %}
+                <li><a href="{% url 'store:signin' %}" class="hover:underline">Login</a></li>
+            {% endif %}
+        </ul>
+        <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-gray text-white p-4 space-y-4">
+        <a href="{% url 'ebook' %}" class="block">Ebooks</a>
+
+        {% if request.user.is_authenticated %}
+            {% if request.user.is_superuser %}
+                <a href="{% url 'add_ebook' %}" class="block">+ New Ebook</a>
+            {% else %}
+                <p class="text-yellow-300">⚠ You are not verified yet!</p>
+            {% endif %}
+        {% else %}
+            <a href="{% url 'store:signin' %}" class="block">Login</a>
+        {% endif %}
+    </div>
+</nav>
+
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+</script>
