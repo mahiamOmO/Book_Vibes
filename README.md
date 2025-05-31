@@ -24,13 +24,11 @@
 
 ## 📸 Screenshots
 
-> ⚠️ Make sure your image files are placed in a folder named `screenshots/` in your project root, and filenames use underscores or hyphens (no spaces).
-
-### 🏠 Home Page  
+### 🏠 Home Page
 ![Home Page](./screenshot/home_page.png)
 
 ### 🔐 Login Page  
-![Login Page](screenshots/login_page.png)
+![Login Page](./screenshot/login_page.png)
 
 ### 📝 Add New Book Option  
 ![Add New Book Option](screenshots/add_new_book_option.png)
