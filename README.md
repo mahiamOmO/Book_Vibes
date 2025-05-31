@@ -145,13 +145,12 @@ Book_Vibes/
    Open your browser and navigate to `http://localhost:8000/`
 
    
-7. 🧪 Testing
+## 🧪 Testing
+
 To run tests, use:
 
-```bash```
-
+```bash
 python manage.py test
-```
 
 ---
 
