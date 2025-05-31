@@ -6,7 +6,8 @@
 
 ## 🧑‍🏫 Faculty & Course Information
 
-- **Faculty:** Tahmid Taki Rahman  
+- **Faculty:** ![Tahmid Taki Rahman](https://cse.uap-bd.edu/uploads/faculty/71.jpg)
+
 - **Course:** CSE 322 – Software Engineering
 
 ---
@@ -25,49 +26,50 @@
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](./screenshot/home_page.png)
+![Home Page](./screenshort/home_page.png)
 
 ### 🔐 Login Page  
-![Login Page](./screenshot/login_page.png)
+![Login Page](./screenshort/login_page.png)
 
 ### 📝 Add New Book Option  
-![Add New Book Option](screenshots/add_new_book_option.png)
+![Add New Book Option](./screenshort/add_new_book_option.png)
 
 ### ⚙️ Admin Site Access  
-![Admin Site Access](screenshots/admin_site_access.png)
+![Admin Site Access](./screenshort/admin_site_access.png)
 
 ### 📖 Book Details Page  
-![Book Details Page](screenshots/book_details_page.png)
+![Book Details Page](./screenshort/book_details_page.png) 
+
 
 ### 📚 Book Page  
-![Book Page](screenshots/book_page.png)
+![Book Page](./screenshort/book_page.png) 
 
 ### 📘 Admin Chapter Read  
-![By Admin Chapter Read](screenshots/by_admin_chapter_read.png)
+![By Admin Chapter Read](./screenshort/by_admin_chapter_read.png)
 
 ### ➕ Chapter Add  
-![Chapter Add](screenshots/chapter_add.png)
+![Chapter Add](./screenshort/chapter_add.png)
 
 ### 📘 Chapter E-Book  
-![Chapter E-Book](screenshots/chapter_ebook.png)
+![Chapter E-Book](./screenshort/chapter_ebook.png)
 
 ### 🆕 Create Account  
-![Create Account](screenshots/create_account.png)
+![Create Account](./screenshort/create_acc.png)
 
 ### ❌ Delete Book Option  
-![Delete Book Option](screenshots/delete_book_option.png)
+![Delete Book Option](./screenshort/delete_book_option.png)
 
 ### 📥 E-book Add New Book  
-![E-book Add New Book](screenshots/ebook_add_new_book.png)
+![E-book Add New Book](./screenshort/ebook_add_new_book.png)
 
 ### 🏠 E-book Homepage  
-![E-book Homepage](screenshots/ebook_homepage.png)
+![E-book Homepage](./screenshort/ebook_homepage.png)
 
 ### 📝 Edit Book Info  
-![Edit Book Info](screenshots/edit_book_info.png)
+![Edit Book Info](./screenshort/edit_book_info.png)
 
 ### 📤 Update E-book  
-![Update E-book](screenshots/update_ebook.png)
+![Update E-book](./screenshort/update_ebook.png)
 
 ---
 
@@ -166,7 +168,7 @@ python manage.py test
 
 For any queries or feedback, please reach out to:
 
-- **Email:** [your-email@example.com]
+- **Email:** [mahiamomo12@gmail.com]
 - **GitHub:** [@mahiamOmO](https://github.com/mahiamOmO)
 - **LinkedIn:** [mahiamomo](https://www.linkedin.com/in/mahiamomo12/)
 
