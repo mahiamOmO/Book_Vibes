@@ -1,0 +1,52 @@
+{% extends "ebook/base.html" %}
+
+{% block title %}Add New Ebook{% endblock title %}
+
+{% block content %}
+<div class="flex justify-center items-center min-h-screen bg-gray-100 p-6">
+    <div class="bg-white shadow-xl rounded-lg max-w-2xl w-full p-8">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">📖 Add a New Ebook</h1>
+
+        <form method="POST" enctype="multipart/form-data" class="space-y-5">
+            {% csrf_token %}
+
+            <div>
+                <label class="block text-gray-700 font-semibold">Book Title</label>
+                <input type="text" name="name" class="input input-bordered w-full" required>
+                {% if form.name.errors %}
+                    <p class="text-red-500 text-sm mt-1">{{ form.name.errors.0 }}</p>
+                {% endif %}
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-semibold">Cover Image</label>
+                <input type="file" name="image" class="file-input file-input-bordered w-full">
+                {% if form.image.errors %}
+                    <p class="text-red-500 text-sm mt-1">{{ form.image.errors.0 }}</p>
+                {% endif %}
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-semibold">Categories</label>
+                <div class="flex flex-wrap gap-2">{{ form.categories }}</div>
+                {% if form.categories.errors %}
+                    <p class="text-red-500 text-sm mt-1">{{ form.categories.errors.0 }}</p>
+                {% endif %}
+            </div>
+
+            <div>
+                <label class="block text-gray-700 font-semibold">Summary</label>
+                <textarea name="summary" rows="3" class="textarea textarea-bordered w-full">{{ form.summary.value }}</textarea>
+                {% if form.summary.errors %}
+                    <p class="text-red-500 text-sm mt-1">{{ form.summary.errors.0 }}</p>
+                {% endif %}
+            </div>
+
+            <div class="mt-4 flex justify-between">
+                <a href="{% url 'ebook' %}" class="btn btn-outline">← Back</a>
+                <button type="submit" class="btn btn-primary">Add Ebook</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,59 @@
+{% extends "ebook/base.html" %}
+
+{% block title %}{{ ebook.name }} - Details{% endblock title %}
+
+{% block content %}
+<div class="flex justify-center items-center min-h-screen bg-gray-100 p-6">
+    <div class="bg-white shadow-xl rounded-lg overflow-hidden max-w-2xl w-full">
+        <img src="{{ ebook.image.url }}" alt="{{ ebook.name }}" class="h-auto object-cover w-full">
+
+        <div class="p-6">
+            <h2 class="text-2xl font-bold text-gray-800">{{ ebook.name }}</h2>
+            <p class="text-gray-600 mt-2">By <span class="font-semibold text-blue-600">{{ ebook.author.username }}</span></p>
+
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Summary</h3>
+                <p class="text-gray-700 mt-2">{{ ebook.summary }}</p>
+            </div>
+
+            <h2 class="text-xl font-semibold mt-6">📚 Chapters</h2>
+            <ul class="list-disc pl-5 mt-2">
+                {% for chapter in ebook.chapters.all %}
+                    <li>
+                        <a href="{% url 'read_chapter' ebook.id chapter.id %}" class="text-blue-600 hover:underline">{{ chapter.title }}</a>
+                    </li>
+                {% empty %}
+                    <li>No chapters added yet.</li>
+                {% endfor %}
+            </ul>
+
+            {% if is_author %}
+                <a href="{% url 'add_chapter' ebook.id %}" class="btn btn-success mt-4">➕ Add Chapter</a>
+            {% endif %}
+
+
+            <div class="mt-4">
+                <h3 class="text-lg font-semibold text-gray-700">Categories</h3>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    {% for category in ebook.categories.all %}
+                        <span class="badge badge-outline badge-primary">{{ category.name }}</span>
+                    {% empty %}
+                        <span class="text-gray-500">No categories</span>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="mt-6 flex gap-4">
+                {% if chapter %}
+                <a href="{% url 'read_chapter' ebook.id chapter.id %}" class="btn btn-primary">Read Now</a>
+                {% endif %}
+                
+                {% if is_author %}
+                <a href="{% url 'update_ebook' ebook.id %}" class="btn btn-warning">Edit</a>
+                <a href="{% url 'delete_ebook' ebook.id %}" class="btn btn-error">Delete</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

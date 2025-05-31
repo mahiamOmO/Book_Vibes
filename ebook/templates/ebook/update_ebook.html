@@ -1,0 +1,51 @@
+{% extends "ebook/base.html" %}
+
+{% block title %}Update Ebook - {{ ebook.name }}{% endblock title %}
+
+{% block content %}
+<div class="flex justify-center items-center min-h-screen bg-gray-100 p-6">
+    <div class="bg-white shadow-lg rounded-lg max-w-2xl w-full p-6">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4">Update Ebook</h1>
+
+        <form method="POST" enctype="multipart/form-data" class="space-y-4">
+            {% csrf_token %}
+            
+            <div>
+                <label class="label">
+                    <span class="text-gray-700 font-semibold">Book Name</span>
+                </label>
+                <input type="text" name="name" value="{{ form.name.value }}" class="input input-bordered w-full" required>
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-gray-700 font-semibold">Book Cover</span>
+                </label>
+                <input type="file" name="image" class="file-input file-input-bordered w-full">
+                {% if ebook.image %}
+                <img src="{{ ebook.image.url }}" alt="Ebook Image" class="mt-2 w-32 h-40 object-cover rounded-lg shadow">
+                {% endif %}
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-gray-700 font-semibold">Categories</span>
+                </label>
+                {{ form.categories }}
+            </div>
+
+            <div>
+                <label class="label">
+                    <span class="text-gray-700 font-semibold">Summary</span>
+                </label>
+                <textarea name="summary" rows="3" class="textarea textarea-bordered w-full">{{ form.summary.value }}</textarea>
+            </div>
+
+            <div class="mt-4 flex gap-4">
+                <button type="submit" class="btn btn-primary">Update Ebook</button>
+                <a href="{% url 'ebook_details' ebook.id %}" class="btn btn-outline">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}
