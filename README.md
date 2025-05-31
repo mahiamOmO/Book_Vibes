@@ -22,56 +22,52 @@
 
 ---
 
-## 🖼️ Screenshot
-
 ## 📸 Screenshots
 
 ### 🏠 Home Page
-![Home Page](screenshort/home page.png)
+![Home Page](./screenshot/home_page.png)
 
-### 🔐 Login Page
-![Login Page](screenshort/log in page.png)
+### 🔐 Login Page  
+![Login Page](./screenshot/login_page.png)
 
-### 📝 Add New Book Option
-![Add New Book Option](screenshort/add new book option.png)
+### 📝 Add New Book Option  
+![Add New Book Option](screenshots/add_new_book_option.png)
 
-### ⚙️ Admin Site Access
-![Admin Site Access](screenshort/admin site access.png)
+### ⚙️ Admin Site Access  
+![Admin Site Access](screenshots/admin_site_access.png)
 
-### 📖 Book Details Page
-![Book Details Page](screenshort/book details page.png)
+### 📖 Book Details Page  
+![Book Details Page](screenshots/book_details_page.png)
 
-### 📚 Book Page
-![Book Page](screenshort/book page.png)
+### 📚 Book Page  
+![Book Page](screenshots/book_page.png)
 
-### 📘 Admin Chapter Read
-![By Admin Chapter Read](screenshort/by admin chapter read.png)
+### 📘 Admin Chapter Read  
+![By Admin Chapter Read](screenshots/by_admin_chapter_read.png)
 
-### ➕ Chapter Add
-![Chapter Add](screenshort/chapter add.png)
+### ➕ Chapter Add  
+![Chapter Add](screenshots/chapter_add.png)
 
-### 📘 Chapter E-Book
-![Chapter E-Book](screenshort/chapter ebook.png)
+### 📘 Chapter E-Book  
+![Chapter E-Book](screenshots/chapter_ebook.png)
 
-### 🆕 Create Account
-![Create Account](screenshort/create acc.png)
+### 🆕 Create Account  
+![Create Account](screenshots/create_account.png)
 
-### ❌ Delete Book Option
-![Delete Book Option](screenshort/delete book option.png)
+### ❌ Delete Book Option  
+![Delete Book Option](screenshots/delete_book_option.png)
 
-### 📥 E-book Add New Book
-![E-book Add New Book](screenshort/ebook add new book.png)
+### 📥 E-book Add New Book  
+![E-book Add New Book](screenshots/ebook_add_new_book.png)
 
-### 🏠 E-book Homepage
-![E-book Homepage](screenshort/ebook homepage.png)
+### 🏠 E-book Homepage  
+![E-book Homepage](screenshots/ebook_homepage.png)
 
-### 📝 Edit Book Info
-![Edit Book Info](screenshort/edit book info.png)
+### 📝 Edit Book Info  
+![Edit Book Info](screenshots/edit_book_info.png)
 
-### 📤 Update E-book
-![Update E-book](screenshort/update ebook.png)
-
----
+### 📤 Update E-book  
+![Update E-book](screenshots/update_ebook.png)
 
 ---
 
@@ -144,13 +140,15 @@ Book_Vibes/
 
    Open your browser and navigate to `http://localhost:8000/`
 
-   
+---
+
 ## 🧪 Testing
 
 To run tests, use:
 
 ```bash
 python manage.py test
+```
 
 ---
 
@@ -170,6 +168,7 @@ For any queries or feedback, please reach out to:
 
 - **Email:** [your-email@example.com]
 - **GitHub:** [@mahiamOmO](https://github.com/mahiamOmO)
+- **LinkedIn:** [mahiamomo](https://www.linkedin.com/in/mahiamomo12/)
 
 ---
 
