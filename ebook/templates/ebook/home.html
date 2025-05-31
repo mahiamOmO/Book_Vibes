@@ -6,7 +6,11 @@
 
     <!-- My Ebooks Section -->
     {% if my %}
+<<<<<<< HEAD
     <h2 class="text-4xl font-bold text-center text-yellow-500 mb-6">📚 My Ebooks</h2>
+=======
+    <h2 class="text-4xl font-bold text-center text-gray-800 mb-6">📚 My Ebooks</h2>
+>>>>>>> 6034e2cc594bd55765b2f6edbe5656826577e0f7
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {% for ebook in my %}
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
@@ -34,7 +38,11 @@
     {% endif %}
 
     <!-- Other Ebooks Section -->
+<<<<<<< HEAD
     <h2 class="text-4xl font-bold text-center text-yellow-500 mb-6">📖 Recently Added</h2>
+=======
+    <h2 class="text-4xl font-bold text-center text-gray-800 mt-12 mb-6">📖 Recently Added</h2>
+>>>>>>> 6034e2cc594bd55765b2f6edbe5656826577e0f7
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {% for ebook in ebooks %}
         <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
@@ -46,8 +54,12 @@
                 <p class="text-sm text-gray-600">By <strong>{{ ebook.author.username }}</strong></p>
                 
                 <div class="mt-4">
+<<<<<<< HEAD
                      <a href="{% url 'ebook_details' ebook.id %}" class="btn btn-primary w-full">View Details</a>
 
+=======
+                    <a href="{% url 'ebook_details' ebook.id %}" class="btn btn-primary w-full">View Details</a>
+>>>>>>> 6034e2cc594bd55765b2f6edbe5656826577e0f7
                 </div>
             </div>
         </div>
