@@ -164,15 +164,19 @@ python manage.py test
 
 ---
 
-## 📧 Contact
 
-For any queries or feedback, please reach out to:
+## ✅ Developed By
 
-- **Email:** [mahiamomo12@gmail.com]
+👩‍💻 **Mahia Akter Momo**  
+ - **Email:** [mahiamomo12@gmail.com]
 - **GitHub:** [@mahiamOmO](https://github.com/mahiamOmO)
 - **LinkedIn:** [mahiamomo](https://www.linkedin.com/in/mahiamomo12/)
 
+👨‍💻 **Md Kamrul Hasan**  
+👩‍💻 **Farzana Hossain Popy**
+
 ---
+
 
 ## 📄 License
 
