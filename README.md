@@ -1,14 +1,27 @@
-# 📚 Book Vibes
+<h1 align="center"><em>📚 Book Vibes</em></h1>
 
-**Book Vibes** is a Django-based web application designed to provide users with a seamless online bookstore experience. Users can browse a curated collection of books, add them to their cart, and place orders with ease. The platform aims to enhance the reading journey by offering an intuitive and user-friendly interface.
+<p align="center">
+  <img src="./screenshort/Book_Vibes logo.jpg" alt="Book Vibes Logo" width="200" />
+</p>
+
+<p><em>Book Vibes is a Django-based web application designed to provide users with a seamless online bookstore experience. Users can browse a curated collection of books, add them to their cart, and place orders with ease. The platform aims to enhance the reading journey by offering an intuitive and user-friendly interface.</em></p>
 
 ---
 
 ## 🧑‍🏫 Faculty & Course Information
 
-- **Faculty:** ![Tahmid Taki Rahman](https://cse.uap-bd.edu/uploads/faculty/71.jpg)
+- **Faculty:** [Tahmid Taki Rahman](https://cse.uap-bd.edu/faculty/faculty_details/71)
 
 - **Course:** CSE 322 – Software Engineering
+
+---
+
+## 🛠️ Technologies Used
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,python,django,sqlite,git,vscode,bootstrap" alt="Technologies Used" />
+</div>
+
 
 ---
 
@@ -73,14 +86,6 @@
 
 ---
 
-## 🛠️ Technologies Used
-
-- **Backend:** Django (Python)
-- **Frontend:** HTML, CSS, JavaScript
-- **Database:** SQLite
-- **Others:** Bootstrap for responsive design
-
----
 
 ## 📂 Project Structure
 
@@ -164,16 +169,39 @@ python manage.py test
 
 ---
 
+<div align="center">
 
-## ✅ Developed By
+## 👨‍💻 Developed By
 
-👩‍💻 **Mahia Akter Momo**  
- - **Email:** [mahiamomo12@gmail.com]
-- **GitHub:** [@mahiamOmO](https://github.com/mahiamOmO)
-- **LinkedIn:** [mahiamomo](https://www.linkedin.com/in/mahiamomo12/)
+<table>
+  <tr>
+    <td align="center" style="padding: 10px;">
+      <img src="screenshort/mahia.jpg" alt="Mahia Akter Momo" width="150" style="border-radius: 50%;" /><br>
+      <strong>Mahia Akter Momo</strong><br>
+      <em>Team Leader</em><br>
+      <a href="https://github.com/mahiamOmO" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/mahiamomo12/" target="_blank">LinkedIn</a>
+    </td>
+    <td align="center" style="padding: 10px;">
+      <img src="screenshort/kamrul.jpg" alt="Md Kamrul Hasan" width="150" style="border-radius: 50%;" /><br>
+      <strong>Md Kamrul Hasan</strong><br>
+      <em>Team Member 1</em><br>
+      <a href="https://github.com/KamrulHasan-creator" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/kamrul-hasan-a30a6633b/" target="_blank">LinkedIn</a>
+    </td>
+    <td align="center" style="padding: 10px;">
+      <img src="screenshort/popy.jpeg" alt="Farzana Hossain Popy" width="150" style="border-radius: 50%;" /><br>
+      <strong>Farzana Hossain Popy</strong><br>
+      <em>Team Member 2</em><br>
+      <a href="https://github.com/Farzana-Popy" target="_blank">GitHub</a> | 
+      <a href="https://www.linkedin.com/in/farzana-hossain-popy/" target="_blank">LinkedIn</a>
+    </td>
+  </tr>
+</table>
 
-👨‍💻 **Md Kamrul Hasan**  
-👩‍💻 **Farzana Hossain Popy**
+</div>
+
+
 
 ---
 
@@ -181,3 +209,13 @@ python manage.py test
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+<div align="center">
+  <a href="https://www.buymeacoffee.com/mahiamomo" target="_blank">
+    <em>
+      <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" width="210">
+    </em>
+  </a>
+  <h3><em>✨ Happy Coding! ❤️ ✨</em></h3>
+</div>
+
