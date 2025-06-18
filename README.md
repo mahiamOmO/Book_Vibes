@@ -1,4 +1,6 @@
-<h1 align="center"><em>📚 Book Vibes</em></h1>
+<h1 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Welcome+To+Book+Vibes+📚;" />
+</h1>
 
 <p align="center">
   <img src="./screenshort/Book_Vibes logo.jpg" alt="Book Vibes Logo" width="200" />
@@ -170,37 +172,50 @@ python manage.py test
 ---
 
 <div align="center">
-
+  
 ## 👨‍💻 Developed By
 
-<table>
+<table align="center">
   <tr>
     <td align="center" style="padding: 10px;">
       <img src="screenshort/mahia.jpg" alt="Mahia Akter Momo" width="150" style="border-radius: 50%;" /><br>
       <strong>Mahia Akter Momo</strong><br>
-      <em>Team Leader</em><br>
-      <a href="https://github.com/mahiamOmO" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/mahiamomo12/" target="_blank">LinkedIn</a>
+      <em>Team Leader</em><br><br>
+      <a href="https://github.com/mahiamOmO" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-333333?style=for-the-badge&logo=github&logoColor=white" />
+      </a><br>
+      <a href="https://linkedin.com/in/mahiamomo12" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+      </a>
     </td>
     <td align="center" style="padding: 10px;">
       <img src="screenshort/kamrul.jpg" alt="Md Kamrul Hasan" width="150" style="border-radius: 50%;" /><br>
       <strong>Md Kamrul Hasan</strong><br>
-      <em>Team Member 1</em><br>
-      <a href="https://github.com/KamrulHasan-creator" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/kamrul-hasan-a30a6633b/" target="_blank">LinkedIn</a>
+      <em>Team Member 1</em><br><br>
+      <a href="https://github.com/KamrulHasan-creator" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-333333?style=for-the-badge&logo=github&logoColor=white" />
+      </a><br>
+      <a href="https://linkedin.com/in/kamrul-hasan-a30a6633b" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+      </a>
     </td>
     <td align="center" style="padding: 10px;">
       <img src="screenshort/popy.jpeg" alt="Farzana Hossain Popy" width="150" style="border-radius: 50%;" /><br>
       <strong>Farzana Hossain Popy</strong><br>
-      <em>Team Member 2</em><br>
-      <a href="https://github.com/Farzana-Popy" target="_blank">GitHub</a> | 
-      <a href="https://www.linkedin.com/in/farzana-hossain-popy/" target="_blank">LinkedIn</a>
+      <em>Team Member 2</em><br><br>
+      <a href="https://github.com/Farzana-Popy" target="_blank">
+        <img src="https://img.shields.io/badge/GitHub-333333?style=for-the-badge&logo=github&logoColor=white" />
+      </a><br>
+      <a href="https://linkedin.com/in/farzana-hossain-popy" target="_blank">
+        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+      </a>
     </td>
   </tr>
 </table>
 
-</div>
 
+
+    
 
 
 ---
